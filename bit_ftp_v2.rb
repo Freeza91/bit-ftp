@@ -21,6 +21,7 @@ module V2
       http.request req
     end
 =begin
+    #未对这个进行测试，因为我还未找到合适的帖子！
     emeny_num = Analy req.body
     friend_num = Setting['topic']['friend'].count
     union_num = 0
@@ -48,7 +49,7 @@ module V2
             td = tr[i].css('td')
             a = td.first.css('div').css('a') 
             if emeny.include? a.last['href']
-              num = 12 - i
+              num = 12 - i                    #需要顶贴的最大数
               return num
             end
           end
