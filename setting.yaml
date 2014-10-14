@@ -1,0 +1,37 @@
+---
+
+index: http://out.bitunion.org
+index_home: http://out.bitunion.org/home.php
+post_index: http://out.bitunion.org/post.php?action=edit
+
+Cookie: "_cookietime=31536000; _discuz_user=xxxxxxxxxxxx; _discuz_pw=b38a68eb1e39955c4131122534d17c0b; oldtopics=%0910579125%0910471436%0910579158%0910579159%0910579164%0910579147%0910552046%0910508846%0910496818%0910578870%09; lastvisit=1413113799; __utmt=1; sid=5wwaqQvP; bu_styleid=10; __utma=17892390.358515897.1393054182.1413105050.1413116089.240; __utmb=17892390.4.10.1413116089; __utmc=17892390; __utmz=17892390.1407553448.204.193.utmcsr=baidu|utmccn=(organic)|utmcmd=organic|utmctr=%E5%8C%97%E7%90%86ftp%E8%81%94%E7%9B%9F"
+User-Agent: "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/31.0.1650.63 Chrome/31.0.1650.63 Safari/537.36"
+Content-Type: "application/x-www-form-urlencoded"
+
+
+#下面的topic代表着一个帖子
+#friend是一个序列，用来记录需要顶贴的相关信息
+#uninon是用来将竞争对手顶出首页用的也是序列
+#enmey_url当程序爬到有相关的url出现后发现竞争对手
+
+topic:
+  friend:
+  - page: xx
+    fid: xx
+    tid: xx
+    pid: xx
+    message: xxxxxx
+    url: xxxxxx
+  uninon:
+  - page: 1
+    fid: 2
+    tid: 3
+    pid: 4
+    message: 5
+    url: xxx
+  enemy_url:
+    - hh
+    - aa
+    - ss
+
+
