@@ -39,7 +39,7 @@ module V2
   def Analy body
     emeny = Setting['topic']['enemy_url']
     num = 10
-    doc = Nokogiri::HTML(res.body, nil, "GB2312")
+    doc = Nokogiri::HTML(body, nil, "GB2312")
     
     doc.css('table').each do |tab|
       if tab['cellspacing'] == "1" and tab['cellpadding'] == "4" and tab['width'] == "100%" and tab['border'] == "0"
