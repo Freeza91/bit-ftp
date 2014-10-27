@@ -4,7 +4,7 @@ require 'uri'
 require 'json'
 
 module Helpers 
-  
+  @hello = "hello" 
   USERNAME = "xxxxx"
   PASSWORD = "xxxxx"
   ACTION = "login"
